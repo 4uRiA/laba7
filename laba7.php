@@ -15,8 +15,9 @@
 В файле индекс.пхп происходит создание объектов классов покупателя и продукта, а также использрвание методов этих двух классов.
 */
 
-require __DIR__.'product.php';
-require __DIR__.'client.php';
+require __DIR__.'/product.php';
+require __DIR__.'/client.php';
+
 
 
 //-----------------------------------------------
@@ -28,16 +29,21 @@ $bob -> lastOrder = "Vintovka";
 $bob -> money = 500;
 
 $bob -> about_client();
+echo "<br>";echo "<br>";
 $bob -> last_order();
-$bob -> moneyee();
+echo "<br>";echo "<br>";
+$bob -> monyee();
 
 var_dump($bob);
+echo "<br>";echo "<br>";
 
 //-----------------------------------------------
 $phone = new Product();
 
 $phone -> new_information();
 $phone -> about_product();
+echo "<br>";echo "<br>";
 $phone -> new_cost();
 $phone -> about_product();
+echo "<br>";echo "<br>";
 ?>

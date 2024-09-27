@@ -10,11 +10,11 @@ class Client
     }
     public function last_order()
     {
-        echo "Last order that client: ".$this.$lastOrder;
+        echo $this -> lastOrder;
     }
     public function monyee()
     {
-        $this.$money += 100;
+        $this -> money += 100;
     }
 
 

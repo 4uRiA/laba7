@@ -16,14 +16,14 @@
         }
         public function new_information()
         {
-            $this.$name = "Telega";
-            $this.$description = "avavavava";
-            $this.$country = "China";
-            $this.$cost = 20;
+            $this -> name = "Telega";
+            $this -> description = "avavavava";
+            $this -> country = "China";
+            $this -> cost = 20;
         }
         public function new_cost()
         {
-            $this.$cost += 100;
+            $this -> cost += 100;
         }
     }
 
