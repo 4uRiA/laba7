@@ -6,15 +6,25 @@ class Client
     public $money;
     public function about_client()
     {
-        var_dump($this);
+        echo "Имя: ".$this -> name."<br>".
+             "Последний заказ: ".$this -> lastOrder."<br>".
+             "Баланс: ".$this -> money."<br>";
     }
-    public function last_order()
+    public function last_order($item)
     {
-        echo $this -> lastOrder;
+        echo "Работа метода изменения последнего заказа <br>";
+        $this -> lastOrder = $item;
     }
-    public function monyee()
+    public function monyee($temp)
     {
-        $this -> money += 100;
+        echo "Работа метода изменения баланса <br>";
+        $this -> money += $temp;
+    }
+    public function create($name, $lastOrder, $money)
+    {
+        $this -> name = $name;
+        $this -> lastOrder = $lastOrder;
+        $this -> money = $money;
     }
 
 

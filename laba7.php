@@ -24,26 +24,25 @@ require __DIR__.'/client.php';
 $bob = new Client();
 
 
-$bob -> name = "Bob";
-$bob -> lastOrder = "Vintovka";
-$bob -> money = 500;
+$bob -> create("Bob", "Vintovka", 500);
 
 $bob -> about_client();
 echo "<br>";echo "<br>";
-$bob -> last_order();
+$item = "Удочка";
+$bob -> last_order($item);
 echo "<br>";echo "<br>";
-$bob -> monyee();
-
-var_dump($bob);
+$bob -> monyee(1000);
+echo "<br>";echo "<br>";
+$bob -> about_client();
 echo "<br>";echo "<br>";
 
 //-----------------------------------------------
 $phone = new Product();
 
-$phone -> new_information();
+$phone -> new_information("Xiaomi", "Бюджетный телефон для работяг", "Made in China", 1500);
 $phone -> about_product();
 echo "<br>";echo "<br>";
-$phone -> new_cost();
-$phone -> about_product();
+$phone -> new_cost(2000);
 echo "<br>";echo "<br>";
+$phone -> about_product();
 ?>
